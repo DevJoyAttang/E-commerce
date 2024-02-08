@@ -1,0 +1,102 @@
+
+* {
+    margin: 0px;
+    padding: 10px;
+  }
+  body {
+    font-size: 120%;
+    background: #F8F8FF;
+  }
+  
+  .contact_form {
+    width: 30%;
+    margin: 50px auto 0px;
+    color: black;
+    background: #5F9EA0;
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0px;
+  }
+  .btn {
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    background-color: #14054b;
+    border: 5px;
+    border-radius: 16px;
+  }
+  .email{
+    margin-bottom: 5px;
+    color: lightseagreen;
+  }
+  .btn2 {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background-color: #020e00;
+    border: 5px;
+    border-radius: 16px;
+  }
+
+  
+.logout{
+  color: black;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
