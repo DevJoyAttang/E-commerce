@@ -37,3 +37,5 @@ Route::get('/salesproduct',[productController::class,'productsales'])->name('sal
 Route::get('/editform/{productID}',[productController::class,'updateProduct'])->name('edit.product');
 Route::put('/editupdate/{productID}',[productController::class,'editUpdate'])->name('editUpdate');
 Route::get('/deleteproduct/{productID}',[productController::class,'deleteproduct'])->name('delete.product');
+Route::get('/checkout',[productController::class,'checkoutproduct'])->name('checkout');
+Route::put('/buysubmit',[productController::class,'buyproduct'])->name('buysubmit');

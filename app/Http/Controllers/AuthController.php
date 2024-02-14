@@ -84,9 +84,9 @@ class AuthController extends Controller
 
     public function dashboard(){
       return view('dashboard');
-      //$products = new Product;
-        //$products->all();
-        //return view ('dashboard',['products' =>$products->all()]);
+      $products = new Product;
+        // $products->all();
+        return view ('dashboard',['products' =>$products->all()]);
     
       
       

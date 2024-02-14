@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\productController;
 use App\Models\Product;
 
+
 class productController extends Controller
 {
     protected $product;
@@ -79,8 +80,18 @@ class productController extends Controller
     }
 
     public function productsales(){
-     return view('salesproduct');
+        $products = new Product;
+        // dd($products->all());
+        return view('salesproduct', ['products' =>$products->all()]);
+
     }
+    public function checkoutproduct(){
+        $products = new Product;
+        // dd($products->all());
+        return view('checkout', ['products' =>$products->all()]);
+        
+    }
+    
 
   
 }

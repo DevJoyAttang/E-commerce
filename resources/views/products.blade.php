@@ -32,7 +32,7 @@
         <td>{{ $product->id}}</td>
         <td>{{ $product->name}}</td>
         <td>{{ $product->quantity}}</td>
-        <td>{{ $product->amount}}</td>
+        <td>{{ $product->price}}</td>
         <td>{{ $product->status}}</td>
         <td><form action="{{route('edit.product',$product->id)}}"> <button type="submit">Edit</button></form></td>
         <td><form action="{{route('delete.product',$product->id)}}"><button type="submit">Delete </a>
