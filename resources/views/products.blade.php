@@ -35,7 +35,7 @@
         <td>{{ $product->amount}}</td>
         <td>{{ $product->status}}</td>
         <td><form action="{{route('edit.product',$product->id)}}"> <button type="submit">Edit</button></form></td>
-        <td><form action=""> <button type="submit">Delete</button></form></td>
+        <td><form action="{{route('delete.product',$product->id)}}"><button type="submit">Delete </a>
     </tr>
     @endforeach
   

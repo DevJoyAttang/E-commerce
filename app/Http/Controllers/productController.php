@@ -34,15 +34,13 @@ class productController extends Controller
             
             return redirect()->route('products','product updated succesful');
         }
-        public function deleteproduct(){
-            return view('deleteproduct');
+        public function deleteproduct($productID)
+        {
+            $product=product::find($productID);
+            $product->delete();
+            return redirect()->route('products','product deleted');
         }
-
-
-
-
-
-
+        
 
     public function productCreate(Request $request){
         
@@ -79,13 +77,12 @@ class productController extends Controller
     public function productsfile(){
         return view('productregistration');
     }
-    public function productsales(){
-        $products = new Product;
-        $products->all();
-        return view ('salesproduct',['products' =>$products->all()]);
-    }
-      
 
-    
-    
+    public function productsales(){
+     return view('salesproduct');
+    }
+
+  
 }
+
+
